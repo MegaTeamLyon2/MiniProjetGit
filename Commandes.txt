@@ -1,0 +1,8 @@
+Commandes fréquemment utilisée par toute l'équipe : 
+Git clone 
+Git pull 
+Git push 
+Git add
+Git commit -m
+Git config --global user.name
+Git config --global user.email
