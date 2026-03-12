@@ -1,2 +1,1 @@
-Je sais pas quoi mettre
-
+Ce fichier servira de conteneur pour savoir qui a fait un commit et quand si jamais nous perdons le fil du 
