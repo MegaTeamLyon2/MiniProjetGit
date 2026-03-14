@@ -4,6 +4,7 @@
 \usepackage{adjustbox}
 \usepackage{todonotes}
 \usepackage{url}
+\usepackage{float}
 
 
 \title{Compte rendu Git}
@@ -32,53 +33,88 @@ Pour la répartition des tâches : Léo a créé le dépôt sur GitHub (A2) et a
 \subsection{[B2]}
 Pour créer un tag, nous disposons de plusieurs paramètres.
 J'ai tout d'abord créé un premier tag avec le tout premier commit effectué sur le projet -> c'est la version 1.0.0.
-Un release a été associé à ce tag, c'est un pre-release car le projet n'est pas encore utilisable.
-Pour créer de nouveaux tag et de nouveaux release, il suffit de cliquer sur "Releases" puis sur "Draft a new release".
-\begin{figure}[!htbp]
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{image/tag.png}
+\caption{Tag}
+\label{fig:tag}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/premier tag.png}
-\includegraphics[width=\textwidth]{image/premier release.png}
+\caption{Premier tag}
+\label{fig:premTag}
+\end{figure}
+
+Un release a été associé à ce tag, c'est un pre-release car le projet n'est pas encore utilisable.
+Pour créer de nouveaux tag et de nouveaux release, il suffit de cliquer sur "Releases" puis sur "Draft a new release".
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/Premier release.png}
+\caption{Premier release}
+\label{fig:premRelease}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/Créer un nouveau release.png}
+\caption{Créer un nouveau release}
+\label{fig:cree-release}
+\end{figure}
 \\
 \subsection{[B3]}
-Pour créer un pull request on passe directement par l'interface Github [image 1]
-Qui va intégrer ce que j'ai fait plus tôt sur Bash [image 2]
-\begin{figure}[!htbp]
+Pour créer un pull request on passe directement par l'interface Github [\ref{fig:request}]
+Qui va intégrer ce que j'ai fait plus tôt sur Bash [\ref{fig:code-pull}]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{image/image request.png}
 \caption{image 1}
+\label{fig:request}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/code pull.png}
 \caption{image 2}
-\label{fig:label}
+\label{fig:code-pull}
 \end{figure}
 \\
 \subsection{[C1]}
 En intégrant des issues et des milestones il est plus simple d'organiser le projet. On peut confier les issues à certaines personnes du projet.
 Les issues et milestones se font depuis le site github. Lorsque les issues sont effectuées elles peuvent être fermées.
 Les milestones permettent de mieux organiser les issues (par exemple par thèmes).
-\begin{figure}[!htbp]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{image/creation_issues.jpeg}
 \caption{Création d'une issue}
+\label{fig:crea-issue}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/parametres_issues.jpeg}
 \caption{Paramètres ajoutés aux issues}
+\label{fig:parametre-issue}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/Organisation_milstones.jpeg}
 \caption{Organiser les issues avec les milestones}
-\label{fig:label}
+\label{fig:orgaMiles}
 \end{figure}
 
 
 
 
 
-
+\begin{figure}[H]
+\centering
 \includegraphics[width=\textwidth]{image/Capture d'écran 2026-03-11 122408.png}
-\caption{Création du repo github}
-\label{fig:label}
+\caption{Création du dépôt github}
+\label{fig:creaDepot}
 \end{figure}
-
-
-
-
 \end{document}
