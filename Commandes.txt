@@ -6,3 +6,6 @@ Git add
 Git commit -m
 Git config --global user.name
 Git config --global user.email
+Git merge
+Git switch [nom de la branche]
+nano pour edit un fichier texte
