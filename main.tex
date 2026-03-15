@@ -4,6 +4,7 @@
 \usepackage{adjustbox}
 \usepackage{todonotes}
 \usepackage{url}
+\usepackage{float}
 
 
 \title{Compte rendu Git}
@@ -29,34 +30,105 @@ Pour la répartition des tâches : Léo a créé le dépôt sur GitHub (A2) et a
 \\
 
 \section{Description des mises en situation}
-\subsection{[B2]}
-Pour créer un tag, nous disposons de plusieurs paramètres.
-J'ai tout d'abord créé un premier tag avec le tout premier commit effectué sur le projet -> c'est la version 1.0.0.
-Un release a été associé à ce tag, c'est un pre-release car le projet n'est pas encore utilisable.
-Pour créer de nouveaux tag et de nouveaux release, il suffit de cliquer sur "Releases" puis sur "Draft a new release".
-\begin{figure}[!htbp]
+\subsection{[A2]}
+Nous avons décidé de créer notre dépôt en ligne sur GitHub.
+
+\begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{image/tag.png}
-\includegraphics[width=\textwidth]{image/premier tag.png}
-\includegraphics[width=\textwidth]{image/premier release.png}
-\includegraphics[width=\textwidth]{image/Créer un nouveau release.png}
-\\
-\subsection{[B3]}
-Pour créer un pull request on passe directement par l'interface Github [image 1]
-Qui va intégrer ce que j'ai fait plus tôt sur Bash [image 2]
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=\textwidth]{image/image request.png}
-\caption{image 1}
-\includegraphics[width=\textwidth]{image/code pull.png}
-\caption{image 2}
-\label{fig:label}
+\includegraphics[width=\textwidth]{image/creation_depot.png}
+\caption{Création du dépôt github}
+\label{fig:creaDepot}
 \end{figure}
 
+Le dépôt ne contient pas de README, puisqu'il n'y a pas de contenu autre que ce fichier et les différentes images.
+Le dépôt est par ailleur en public, et le lien se situt dans l'Introduction.
 
+\subsection{[B1]}
+Afin de pouvoir travailler à plusieurs en même temps, nous avons créer un branche dans le projet, nommée "Sans-notes". Comme son nom l'indique, cette brnahce contient le même contenu que
+cette branche, sans le package "todonotes" permettant de rajouter des petites notes personnalisées.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/Capture branche.png}
+\caption{Tag}
+\label{fig:tag}
+\end{figure}
 
+\subsection{[B2]}
+Pour créer un tag, nous disposons de plusieurs paramètres.
+On peut également créer un tag depuis bash directement en lui donnant un nom et un commit précis.
+La version bash permet de faire un tag sur le commit que l'on veut alors que la version github nous bloque au commit les plus récent.
+J'ai tout d'abord créé un premier tag avec le tout premier commit effectué sur le projet -> c'est la version 0.1.0.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/tag.png}
+\caption{Tag}
+\label{fig:tag}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/tagbash.png}
+\caption{Premier tag}
+\label{fig:premTag}
+\end{figure}
+
+Un release a été associé à ce tag, c'est un pre-release car le projet n'est pas encore utilisable.
+Pour créer de nouveaux tag et de nouveaux release, il suffit de cliquer sur "Releases" puis sur "Draft a new release".
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/premier_release.png}
+\caption{Premier release}
+\label{fig:premRelease}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/creer_release.png}
+\caption{Créer un nouveau release}
+\label{fig:cree-release}
+\end{figure}
+
+Par la suite on crée plusieurs tag au fur et à mesure de l'avancement du projet.
+Par exemple le tag v0.2.0 signifie qu'une nouvelle page a été ajoutée, en l'occurence le Latex.
+Le tag v0.2.1 signifie qu'il y a eu une modification dans le document Latex mais pas d'ajout de nouvelles pages ou fonctionnalités
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/release2.png} 
+\caption{La suite des releases}
+\label{fig:release2}
+\end{figure}
+
+On fait ca ainsi de suite pour tous les tags en partants de ce principe, lors d'une grosse modification on modifie le dernier chiffre et lors d'une correction mineure on change le dernier chiffre.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/plusieursrelease.png} 
+\caption{Liste des release}
+\label{fig:lstrelease}
+\end{figure}
+
+On a aussi la possibilité de push plusieurs tags à la fois depuis le bash sur le Github
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/plusieurstags.png} 
+\caption{Push plusieurs tag à la fois}
+\label{fig:plustags}
+\end{figure}
+
+On peut égalemet supprimer des tags directement dans le bash
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/supprtagbash.png} 
+\caption{Comment supprimer un tag dans bash}
+\label{fig:supprtag}
+\end{figure}
+
+Le processus de tag peut se dérouler en beaucou plus d'itérations qu'ici présent, il est préférable de ne pas en mettre trop afin de ne pas saturer les release et les tags.
 \\
+<<<<<<< HEAD
 \subsection{[C1]}
 
 
@@ -80,9 +152,63 @@ Malgré quelques difficultés techniques, notamment un problème de connexion re
 
 
 \label{fig:label}
+=======
+On peut désormais associé le tag v1.0.0 au dernier commit effectuer afin de montrer que la version peut être présentée.
+(A MODIFIER!!!!!!!!!!)
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/supprtagbash.png} 
+\caption{Comment supprimer un tag dans bash}
+\label{fig:supprtag}
+>>>>>>> 2975be1ed7f256ad75f6bf553f413b029df6f679
 \end{figure}
 
+\subsection{[B3]}
+Pour créer un pull request on passe directement par l'interface Github [\ref{fig:request}]
+Qui va intégrer ce que j'ai fait plus tôt sur Bash [\ref{fig:code-pull}]
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/image_request.png}
+\caption{image 1}
+\label{fig:request}
+\end{figure}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{image/code_pull.png}
+\caption{image 2}
+\label{fig:code-pull}
+\end{figure}
 
+\subsection{[C1]}
+En intégrant des issues et des milestones il est plus simple d'organiser le projet. On peut confier les issues à certaines personnes du projet.
+\\
+Les issues et milestones se font depuis le site github. Lorsque les issues sont effectuées elles peuvent être fermées.
+\\
+Les milestones permettent de mieux organiser les issues (par exemple par thèmes).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{image/creation_issues.jpeg}
+\caption{Création d'une issue}
+\label{fig:crea-issue}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{image/parametres_issues.jpeg}
+\caption{Paramètres ajoutés aux issues}
+\label{fig:parametre-issue}
+\end{figure}
+
+Ici [\ref{fig:crea-issue}, \ref{fig:parametre-issue}], Lénaëlle a créé une issue et l'a assignée à Mathis pour qu'il fasse le B3. L'issue a également été assignée au milestone "Points clés" pour qu'on puisse retrouver plus facilement quels points clés il fallait encore faire.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{image/Organisation_milstones.jpeg}
+\caption{Organiser les issues avec les milestones}
+\label{fig:orgaMiles}
+\end{figure}
+
+\subsection{Conclusion}
 
 \end{document}
